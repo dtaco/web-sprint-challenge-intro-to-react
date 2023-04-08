@@ -72,6 +72,18 @@ After finishing your required elements, you can push your work further. These go
 ## Stretch Interview Questions
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+    -> React JS is a popular JS library devleoped by the Facebook/Meta group in order to solve efficiency issues. It uses different methods such as using state memory and other 'hooks' to help make load times and web apps smoother. It can help with large request-to-server numbers.
+
 1. Describe component state.
+
+  -> A componenet's state is an abject with memoery - it holds data and determines how the component behaves and will eventually render accoring to changes in the app's data, such as event listeners, input, and othe user actions.
+
 1. Describe props.
+
+  -> "props" are Properties (variables, functions, etc.) passed from a parent component to child components. The child component cannot alter them - it is a one way transaction - and child comonents use these props to determine what to do.
+
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+  -Using the hook "useEffect( ()=> {ANON FUNCTION}, [ DEPENDENCY ARRAY ]);" allows us to create "side effects" or complete DOM surgery. These are effects that take place after the DOM renders that are either trigger by a load, a change in state/props or other action based on the dependency array. If the dependency array is not defined, then the side effect will not occur.
